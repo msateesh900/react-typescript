@@ -36,11 +36,12 @@ function App() {
       {/* <PersonList names={nameList} /> */}
 
       {/* Advanced Props */}
-      <Status status="loading..." />
+      {/* <Status status="loading..." />
       <Heading>Place Holder Text</Heading>
       <Oscar>
         <Heading>Oscar goes to Leonardo Dicarpio!</Heading>
-      </Oscar>
+      </Oscar> */}
+      <Greet name={"Vishwas"} isLoggesIn={true} />
     </div>
   )
 }
