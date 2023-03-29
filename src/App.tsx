@@ -1,6 +1,7 @@
 import React from "react"
 import "./App.css"
 import Button from "./components/Button"
+import Container from "./components/Container"
 import Greet from "./components/Greet"
 import Heading from "./components/Heading"
 import Oscar from "./components/Oscar"
@@ -32,7 +33,7 @@ function App() {
     <div className="App">
       {/* Basic Props */}
 
-      {/* <Greet name={"Vishwas"} messageCount={10} isLoggesIn={true} /> */}
+      <Greet name={"Vishwas"} messageCount={10} isLoggesIn={true} />
       {/* <Person name={personName} /> */}
       {/* <PersonList names={nameList} /> */}
 
@@ -43,14 +44,12 @@ function App() {
         <Heading>Oscar goes to Leonardo Dicarpio!</Heading>
       </Oscar> */}
       {/* <Greet name={"Vishwas"} isLoggesIn={true} /> */}
-      <Button
+      {/* <Button
         handleClick={(event, id) => {
-          {
-            /* handleClick={()=>{console.log("Button Cliked")}*/
-          }
-          console.log("Button Clicked", event, id)
+          console.log("Button Clicked", event, id) // handleClick={()=>{console.log("Button Cliked")}
         }}
-      />
+      /> */}
+      {/* <Container style={{ border: "1px solid black", padding: "1rem" }} /> */}
     </div>
   )
 }

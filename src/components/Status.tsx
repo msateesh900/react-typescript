@@ -3,11 +3,11 @@ type StatusProps = {
   status: "loading..." | "success" | "error"
 }
 
-export default function Status(props: StatusProps) {
+export default function Status({ status }: StatusProps) {
   let message
-  if (props.status === "loading...") message = "Loading..."
-  else if (props.status === "success") message = "Data Fetched Successfully"
-  else if (props.status === "error") message = "Error Fetching Data"
+  if (status === "loading...") message = "Loading..."
+  else if (status === "success") message = "Data Fetched Successfully"
+  else if (status === "error") message = "Error Fetching Data"
   return (
     <div>
       {/* <h2>Loading....</h2>

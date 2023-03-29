@@ -2,6 +2,6 @@ type HeadingProps = {
   children: string
 }
 
-export default function Heading(props: HeadingProps) {
-  return <h2>{props.children}</h2>
+export default function Heading({ children }: HeadingProps) {
+  return <h2>{children}</h2>
 }

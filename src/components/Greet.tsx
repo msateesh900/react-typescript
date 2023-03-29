@@ -4,8 +4,13 @@ type GreetProps = {
   isLoggesIn: boolean
 }
 
-export default function Greet(props: GreetProps) {
-  const { messageCount = 0 } = props
+export default function Greet({
+  name,
+  messageCount = 0,
+  isLoggesIn,
+}: GreetProps) {
+  // const { messageCount = 0 } = messageCount
+  // messageCount = 0
   return (
     <div>
       <h2>
@@ -13,8 +18,8 @@ export default function Greet(props: GreetProps) {
         {/* {props.isLoggesIn
           ? `Welcome ${props.name} you have ${props.messageCount} unread messages`
           : `Welcome Guest`} */}
-        {props.isLoggesIn
-          ? `Welcome ${props.name} you have ${messageCount} unread messages`
+        {isLoggesIn
+          ? `Welcome ${name} you have ${messageCount} unread messages`
           : `Welcome Guest`}
       </h2>
     </div>
