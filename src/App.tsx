@@ -7,6 +7,8 @@ import Heading from "./components/Heading"
 import Oscar from "./components/Oscar"
 import Person from "./components/Person"
 import PersonList from "./components/PersonList"
+import { LoggedIn } from "./components/state/LoggedIn"
+import { User } from "./components/state/User"
 import Status from "./components/Status"
 
 function App() {
@@ -33,7 +35,7 @@ function App() {
     <div className="App">
       {/* Basic Props */}
 
-      <Greet name={"Vishwas"} messageCount={10} isLoggesIn={true} />
+      {/* <Greet name={"Vishwas"} messageCount={10} isLoggesIn={true} /> */}
       {/* <Person name={personName} /> */}
       {/* <PersonList names={nameList} /> */}
 
@@ -50,6 +52,8 @@ function App() {
         }}
       /> */}
       {/* <Container style={{ border: "1px solid black", padding: "1rem" }} /> */}
+      {/* <LoggedIn /> */}
+      <User />
     </div>
   )
 }
