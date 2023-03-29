@@ -1,5 +1,6 @@
 import React from "react"
 import "./App.css"
+import Button from "./components/Button"
 import Greet from "./components/Greet"
 import Heading from "./components/Heading"
 import Oscar from "./components/Oscar"
@@ -41,7 +42,15 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to Leonardo Dicarpio!</Heading>
       </Oscar> */}
-      <Greet name={"Vishwas"} isLoggesIn={true} />
+      {/* <Greet name={"Vishwas"} isLoggesIn={true} /> */}
+      <Button
+        handleClick={(event, id) => {
+          {
+            /* handleClick={()=>{console.log("Button Cliked")}*/
+          }
+          console.log("Button Clicked", event, id)
+        }}
+      />
     </div>
   )
 }
